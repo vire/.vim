@@ -1,14 +1,10 @@
 set nocompatible
 filetype plugin indent on
 
-" set the runtime path to include vundle and init
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
-Plugin 'gmarik/vundle'
-Plugin 'altercation/vim-colors-solarized'
+execute pathogen#infect()
 
-call vundle#end()
+map <C-n> :NERDTreeToggle<CR>
 
 set hidden
 
