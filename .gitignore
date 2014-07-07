@@ -1,4 +1,5 @@
 *.un~
 *.swp
 *.swo
-backup/*
+backup/
+
