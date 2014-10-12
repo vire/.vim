@@ -16,7 +16,7 @@ endif
 set autowrite
 
 set backup
-set backupdir=~/.vim/backup,.,~/
+set backupdir=~/.vim/backup
 
 set directory=~/tmp,.,/tmp
 set confirm
