@@ -1,10 +1,33 @@
-set nocompatible              " be iMproved, required
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" be iMproved, required
+set nocompatible
+
+" Sets how many lines of history VIM has to remember
+set history=700
+
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+""" Previous config
 filetype off                  " required
 syntax enable
 colorscheme molokai
 
-" Sets how many lines of history VIM has to remember
-set history=700
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -12,6 +35,14 @@ set laststatus=2
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Files, backups and undo
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
 
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
